@@ -49,6 +49,12 @@ A full-stack task management application with role-based access control (RBAC). 
 - Vite build tool
 - Vanilla CSS
 
+**Deployment:**
+- Render (Backend)
+- Vercel (Frontend)
+- MongoDB Atlas 
+
+
 ## 📁 Project Structure
 
 ```
@@ -382,5 +388,6 @@ MIT License - See LICENSE file for details
 
 **Last Updated**: December 2025
 #
+
 
 
