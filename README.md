@@ -295,9 +295,9 @@ POST /auth/register
 Content-Type: application/json
 
 {
-  "name": "John Doe",
-  "email": "john@example.com",
-  "password": "password123"
+  "name": "Ankit Sharma",
+  "email": "ankit@gmail.com",
+  "password": "123456"
 }
 ```
 
@@ -373,11 +373,7 @@ For issues or questions, please check:
 
 MIT License - See LICENSE file for details
 
-## 👥 Contributors
-
-- Intern Assignment Project
-
----
 
 **Last Updated**: December 2025
 #
+
