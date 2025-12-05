@@ -1,0 +1,271 @@
+:root{
+  --bg:#0f172a;
+  --card:#1e293b;
+  --accent:#3b82f6;
+  --accent-dark:#1d4ed8;
+  --success:#10b981;
+  --danger:#ef4444;
+  --border:#334155;
+  --muted:#94a3b8;
+  --text:#f1f5f9;
+}
+
+body{
+  font-family:'Inter','Segoe UI','Roboto','Arial',sans-serif;
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  padding:24px;
+}
+
+h1{
+  background:linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  font-size:32px;
+  margin:0 0 24px 0;
+  font-weight:700;
+}
+
+h2{
+  color:var(--text);
+  font-size:24px;
+  margin:0 0 16px 0;
+}
+
+h3{
+  color:var(--text);
+  font-size:18px;
+  margin:20px 0 12px 0;
+  font-weight:600;
+}
+
+h4{
+  color:var(--text);
+  font-size:16px;
+  margin:12px 0 8px 0;
+  font-weight:600;
+}
+
+input{
+  display:block;
+  margin:8px 0;
+  padding:12px 14px;
+  width:100%;
+  box-sizing:border-box;
+  border:1px solid var(--border);
+  border-radius:8px;
+  background:var(--card);
+  color:var(--text);
+  font-size:14px;
+  transition:all 0.2s ease;
+}
+
+input:focus{
+  outline:none;
+  border-color:var(--accent);
+  box-shadow:0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+input::placeholder{
+  color:var(--muted);
+}
+
+button{
+  padding:11px 18px;
+  margin-top:6px;
+  margin-right:8px;
+  border-radius:8px;
+  background:var(--accent);
+  color:#fff;
+  border:0;
+  font-weight:600;
+  font-size:14px;
+  cursor:pointer;
+  transition:all 0.2s ease;
+  display:inline-block;
+}
+
+button:hover{
+  background:var(--accent-dark);
+  transform:translateY(-1px);
+  box-shadow:0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+button:active{
+  transform:translateY(0);
+}
+
+button.danger{
+  background:var(--danger);
+}
+
+button.danger:hover{
+  background:#dc2626;
+}
+
+button.secondary{
+  background:#475569;
+}
+
+button.secondary:hover{
+  background:#334155;
+}
+
+.auth{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  align-items:stretch;
+  margin:40px 0;
+  flex-wrap:wrap;
+}
+
+.auth-card{
+  background:var(--card);
+  padding:32px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  min-width:340px;
+  box-shadow:0 20px 25px rgba(0, 0, 0, 0.3);
+}
+
+.auth-tabs{
+  display:flex;
+  gap:8px;
+  margin-bottom:24px;
+}
+
+.auth-tabs button{
+  flex:1;
+  margin-top:0;
+  background:#475569;
+  font-weight:600;
+}
+
+.auth-tabs button.active{
+  background:var(--accent);
+}
+
+.auth-tabs button:hover{
+  background:var(--accent-dark);
+}
+
+ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.task{
+  background:var(--card);
+  border:1px solid var(--border);
+  padding:16px;
+  margin-bottom:12px;
+  border-radius:8px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  transition:all 0.2s ease;
+  cursor:default;
+}
+
+.task:hover{
+  border-color:var(--accent);
+  box-shadow:0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+.task strong{
+  display:block;
+  font-size:15px;
+  color:var(--text);
+  margin-bottom:4px;
+}
+
+.task-desc{
+  color:var(--muted);
+  font-size:13px;
+}
+
+.task-status{
+  color:var(--muted);
+  font-size:12px;
+  margin-top:4px;
+}
+
+.task.completed .task strong{
+  text-decoration:line-through;
+  color:var(--muted);
+}
+
+.task-actions{
+  display:flex;
+  gap:6px;
+}
+
+.task-actions button{
+  padding:8px 12px;
+  font-size:12px;
+  margin-top:0;
+}
+
+.muted{
+  color:var(--muted);
+}
+
+.user-info{
+  background:var(--card);
+  padding:16px;
+  border-radius:8px;
+  border:1px solid var(--border);
+  margin-bottom:12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.badge{
+  display:inline-block;
+  padding:4px 10px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:600;
+  background:var(--accent);
+  color:#fff;
+}
+
+.badge.admin{
+  background:#a78bfa;
+}
+
+.badge.user{
+  background:#10b981;
+}
+
+.form-group{
+  margin-bottom:12px;
+}
+
+.form-row{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+.form-row input{
+  flex:1;
+  min-width:200px;
+}
+
+.loading{
+  text-align:center;
+  padding:20px;
+  color:var(--muted);
+}

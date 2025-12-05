@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RoleTrack - React Client</title>
+    <script type="module" crossorigin src="/assets/index-BvK0gI5-.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-JbnkiFR-.css">
+  </head>
+  <body>
+    <div id="root"></div>
+
+  </body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RoleTrack - Tasks UI</title>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Tasks App</h1>
+
+    <div id="auth">
+      <div class="forms">
+        <div>
+          <h2>Register</h2>
+          <input id="reg-name" placeholder="Name" />
+          <input id="reg-email" placeholder="Email" />
+          <input id="reg-password" placeholder="Password" type="password" />
+          <button id="btn-register">Register</button>
+        </div>
+        <div>
+          <h2>Login</h2>
+          <input id="login-email" placeholder="Email" />
+          <input id="login-password" placeholder="Password" type="password" />
+          <button id="btn-login">Login</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="app" class="hidden">
+      <div class="top">
+        <div>Logged in as <span id="user-id"></span></div>
+        <button id="btn-logout">Logout</button>
+      </div>
+
+      <section class="new-task">
+        <input id="new-title" placeholder="Task title" />
+        <input id="new-desc" placeholder="Description" />
+        <button id="btn-create">Create Task</button>
+      </section>
+
+      <section>
+        <h3>Your Tasks</h3>
+        <ul id="tasks"></ul>
+      </section>
+    </div>
+
+    <div id="messages"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
